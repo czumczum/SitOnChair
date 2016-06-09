@@ -1,26 +1,29 @@
-* {
-	font-family: Times-new-roman, sans-serif;
-	margin: 0;
+body {
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	background-color: #333;
 }
+strong {
+	font-weight: 700;
+	color: #24c9ae;
+}
+/*Header*/
 header {
 	position:relative;
-	width:100%;
-	height:50px;
-	background-color: black;
-	color: white;
-}
-nav {
 	margin-left: auto;
 	margin-right: auto;
-	width:600px;
-	height:90%;
-	border: 1px solid red;
+	width:1200px;
+	height:40px;
+	background-color: black;
+	color: white;
+	margin-bottom: 0px;
 }
 header p {
-	margin-top: auto;
-	margin-bottom: auto;
+	padding: 13px;
+    margin-left: 20px;
 	float: left;
-	font-size: 2em;
+	font-size: 13px;
+	text-transform: uppercase;
 }
 header ul {
 	float: right;
@@ -29,48 +32,81 @@ ul li {
 	display: inline-block;
 	margin-top: 15px;
 	padding-right: 10px;
-	color: white;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
 	text-transform: uppercase;
 }
-
-/*Biały element*/
-main {
-	position:relative;
-	width:100%;
-	height:250px;
-	background-color: white;
-	color: black;
+ul#hidden li {
+	display: none;
 }
-article {
-	margin-top: 10px;
+
+/*Biały element z kresłem*/
+main {
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	width:600px;
-	height:90%;
-	border: 1px solid red;
+	width:1200px;
+	height:506px;
+	background-color: white;
+	color: black;
+/*	Kolor tla z gradientem*/
+	background: rgba(250,250,250,1);
+	background: -moz-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 63%, rgba(209,209,209,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250,250,250,1)), color-stop(63%, rgba(242,242,242,1)), color-stop(100%, rgba(209,209,209,1)));
+	background: -webkit-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 63%, rgba(209,209,209,1) 100%);
+	background: -o-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 63%, rgba(209,209,209,1) 100%);
+	background: -ms-linear-gradient(top, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 63%, rgba(209,209,209,1) 100%);
+	background: linear-gradient(to bottom, rgba(250,250,250,1) 0%, rgba(242,242,242,1) 63%, rgba(209,209,209,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#d1d1d1', GradientType=0 );
+
 }
+/*Zdjęcie krzesła*/
 #image {
 	display: inline-block;
-	width: 300px;
-	height: 90%;
-	margin-top: 2%;
-	background-color: black;
+	position: relative;
+	width: 477px;
+	height: 350px;
+	top: 80px;
+	background-image: url("../img/black_chair.png");
+	background-size: cover;
 }
-article h1 {
+main h1 {
     display: inline-block;
-    padding: 20px;
-    position: absolute;
+	vertical-align: top;
+	padding-top: 140px;
+    position: relative;
     text-transform: uppercase;
+	font-weight: 600;
+	padding-left: 75px;
+	font-size: 30px;
 }
-article p {
+main p {
 	display: inline-block;
-    width: 250px;
+    width: 430px;
     height: 150px;
     overflow: hidden;
     margin-top: 50px;
     margin-left: 20px;
-    position: absolute;
+    position: relative;
+    left: 605px;
+    top: -177px;
     font-size: 0.9em;
+}
+main a {
+    vertical-align: top;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 12px;
+    border-radius: 10%;
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    margin-left: 245px;
+    /* padding-left: 315px; */
+    background-color: #24c9ae;
 }
 
 /*Czarny element*/
