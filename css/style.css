@@ -183,9 +183,129 @@ section {
     font-size: 14px;
     padding-left: 20px;
     padding-right: 25px;
-	line-height: 1.5em
+	line-height: 1.5em;
     padding-top: 5px;
 }
+
+/*Cennik/nawigacja*/
+nav {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width:1200px;
+	height:730px;
+	background-color: #f0f0f0;
+}
+nav h1 {
+	color: black;
+    font-weight: 600;
+	display: block;
+    width: 140px;
+    border-bottom: 6px solid #24c9ae;
+	text-transform: uppercase;
+	margin-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+.box{
+    width: 320px;
+    height: 500px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 2px 2px #c2c2c2;
+    padding: 35px 10px 25px 10px;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 50px;
+    position: relative;
+    display: inline-block
+}
+
+.box .header{
+	position:absolute;
+	height:68px;
+
+	top:-34px;
+	left:0;
+	right:0;
+}
+.box h2 {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #24c9ae;
+    font-weight: 500;
+}
+.box .header div{
+    margin: -10px auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #c2c2c2;
+    border: 15px solid white;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 2px #c2c2c2;
+}
+.box #price {
+	margin: 25px auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #c2c2c2;
+    box-sizing: border-box;
+    box-shadow: 0 0 1px 1px #c2c2c2;
+}
+.box p:first-child {
+	font-size: 40px;
+    color: #c2c2c2;
+    padding-top: 25px;
+    font-weight: 600;
+	padding-bottom: 5px;
+}
+#price p {
+	color: #c2c2c2;
+	text-transform: uppercase;
+    font-weight: 600;
+}
+sup {
+	font-size: 15px;
+	font-weight: 500;
+	vertical-align: super;
+}
+
+/*Co drugi zielony*/
+.box:nth-child(2n+1) {
+    background-color: #24c9ae;
+	border: none;
+	box-shadow: none;
+}
+.box:nth-child(2n+1) h2 {
+    color: white;
+}
+.box:nth-child(2n+1) .header div{
+    background-color: white;
+    border: 15px solid #24c9ae;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+.box:nth-child(2n+1) #price {
+    border: 1px solid #24c9ae;
+    box-shadow: 0 0 1px 1px #24c9ae;
+}
+.box:nth-child(2n+1) p:first-child {
+    color: #24c9ae;
+}
+#price p {
+	color: #c2c2c2;
+	text-transform: uppercase;
+    font-weight: 600;
+}
+sup {
+	font-size: 15px;
+	font-weight: 500;
+	vertical-align: super;
+}
+
 
 footer {
 	position: relative;
