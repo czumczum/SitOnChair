@@ -37,8 +37,41 @@ header ul li {
 	font-weight: 600;
 	text-transform: uppercase;
 }
-ul#hidden li {
+ul.hidden {
+	margin-top: 30px;
+	position: absolute;
+
+}
+.hidden li {
 	display: none;
+}
+#menu:hover ul li {
+    display: block;
+    background-color: black;
+    position: relative;
+    top: 0px;
+	left: -15px;
+    z-index: 4;
+	width: 100px;
+	margin: 0;
+	padding: 5px;
+	font-size: 13px;
+	text-transform: none;
+}
+#menu div.arrow {
+	position: absolute;
+	display: none;
+}
+#menu:hover div.arrow {
+	display: block;
+    top: 43px;
+    right: 166px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 19px solid black;
+	z-index: 4;
 }
 
 /*Biały element z kresłem*/
@@ -248,7 +281,7 @@ nav h1 {
     box-sizing: border-box;
     box-shadow: 0 0 0 2px #c2c2c2;
 }
-.box #price {
+.box .price {
 	margin: 25px auto;
     width: 130px;
     height: 130px;
@@ -265,7 +298,7 @@ nav h1 {
     font-weight: 600;
 	padding-bottom: 5px;
 }
-#price p {
+.price p {
 	color: #c2c2c2;
 	text-transform: uppercase;
     font-weight: 600;
@@ -276,39 +309,29 @@ sup {
 	vertical-align: super;
 }
 
-/*Co drugi zielony*/
-.box:nth-child(2n+1) {
+/*Aktywny zielony*/
+.box:hover {
     background-color: #24c9ae;
-	border: none;
+	border: 1px solid transparent;
 	box-shadow: none;
 }
-.box:nth-child(2n+1) h2 {
+.box:hover h2 {
     color: white;
 }
-.box:nth-child(2n+1) .header div{
+.box:hover .header div{
     background-color: white;
     border: 15px solid #24c9ae;
 	box-shadow: none;
 
 }
-.box #price-green {
-    border: 1px solid #24c9ae;
-    box-shadow: 0 0 1px 1px #24c9ae;
-	margin: 25px auto;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
+.box:hover .price {
+    border: none;
     background-color: white;
-    box-sizing: border-box;
-	box-shadow: none;
+	color: #24c9ae;
 
 }
-.box:nth-child(2n+1) p:first-child {
+.box:hover p:first-child {
     color: #24c9ae;
-	padding-left: 10px;
-}
-#price-green {
-	color: #24c9ae;
 }
 nav ul {
 	list-style: none;
@@ -339,12 +362,12 @@ nav a {
     bottom: 20px;
     left: 95px;
 }
-a#active {
+.box:hover a {
 	color: #24c9ae;
 	background-color: white;
 }
 
-#ul-green li {
+.box:hover ul li {
 	background: none;
     background-color: white;
     font-size: 22px;
@@ -352,10 +375,10 @@ a#active {
     color: #8f8f8f;
 	box-shadow: 0 1px 1px 0 #24c9ae;
 }
-#ul-green {
+.box:hover ul {
 	 box-shadow: 0 2px 1px 0px #24c9ae;
 }
-#ul-green li:nth-child(2n+2) {
+.box:hover ul li:nth-child(2n+2) {
 	background: none;
     background-color: #f0f0f0;
 }
