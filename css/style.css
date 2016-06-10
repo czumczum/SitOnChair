@@ -390,9 +390,9 @@ a#active {
 #contact input {
 	font-family: 'Raleway', serif;
     width: 600px;
-    font-size: 20px;
-    padding: 5px 10px;
-	margin-top: 25px;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 30px;
 	border: none;
     box-shadow: 0 0 2px 0 #24c9ae;
 }
@@ -400,9 +400,9 @@ a#active {
 	font-family: 'Raleway', serif;
     width: 600px;
 	height: 150px;
-    font-size: 20px;
-    padding: 5px 10px;
-	margin-top: 25px;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 30px;
 	resize: none;
 	color: #c0c0c0;
 	border: none;
@@ -414,12 +414,13 @@ a#active {
 	top: -78px;
     left: 380px;
     width: 400px;
-    font-size: 25px;
-    padding: 10px;
+    font-size: 30px;
+    padding: 20px;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
 	border-radius: 10%;
+	margin-top: 0;
 }
 #contact input[type="checkbox"] {
     display:none;
@@ -427,7 +428,7 @@ a#active {
 #contact input[type="checkbox"] + label span {
     display: inline-block;
     position: relative;
-    top: -133px;
+    top: -150px;
     left: 740px;
     font-size: 16px;
     width: 300px;
@@ -448,23 +449,46 @@ a#active {
     position: relative;
     width: 44px;
     height: 38px;
+	vertical-align: baseline;
+}
+#contact-img {
+	display: inline-block;
+	position: relative;
+	width: 250px;
+    height: 215px;
+    top: -450px;
+    left: 785px;
+	background-image: url("../img/red_chair.png");
+	background-size: cover;
 }
 
 /*Stopka*/
 footer {
-	position: relative;
-    margin-top: 192px;
-	margin-left: auto;
-	margin-right: auto;
-	width:600px;
-	height:30px;
-	border: 1px solid red;
+    position: relative;
+    top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 36px;
+    color: #c0c0c0;
+	text-align: right;
+	vertical-align: middle;
 }
 footer p:first-child {
-	padding:5px 0 5px 0;
+	padding:8px 0 5px 0;
 	float: left;
 }
 footer p:last-child {
 	float: right;
-	padding:5px 0 5px 0;
+    padding: 8px 0 5px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    word-spacing: 5px;
+	margin-left: 50px;
+}
+footer strong {
+	color: #c0c0c0;
+}
+footer img {
+	vertical-align: middle;
 }
