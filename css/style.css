@@ -40,8 +40,8 @@ header ul li {
     position: absolute;
     display: none;
     background-color: black;
-    right: 128px;
-    top: 61px;
+    right: -10px;
+    top: 58px;
     z-index: 4;
     width: 95px;
     margin: 0px;
@@ -57,14 +57,19 @@ header ul li {
 #arrow-menu {
 	display: none;
 	position: absolute;
-    top: 43px;
-    right: 166px;
+    top: 39px;
+    right: 25px;
     width: 0;
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 19px solid black;
 	z-index: 4;
+}
+#menu-helper {
+	position: absolute;
+	height: 100px;
+	right: 145px;
 }
 
 /*Biały element z kresłem*/

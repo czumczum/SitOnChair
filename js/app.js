@@ -1,28 +1,53 @@
 document.addEventListener("DOMContentLoaded", function () {
 
- //Menu wysuwane
+	//Menu wysuwane
 
-	var li = document.querySelector('.menu');
-	var ul = document.querySelector('#menu')
-	//Menu jako <ul><li>
+	var menu = document.querySelector('#menu-helper');
+		//Menu jako <ul><li>
 
-	var showMe = function (e) {
-		if (this.children) {
-			for (var i = 0; i < this.children.length; i++) {
-			this.children[i].style.display = "block";
-			}
+	var showMenu = function (e) {
+		var showMe = function (arg) {
+			if (arg.children) {
+				for (var i = 0; i < arg.children.length; i++) {
+					arg.children[i].style.display = "block";
 				}
-			};
-	var hideMenu = function (e) {
-		if (li.children) {
-			for (var i = 0; i < li.children.length; i++) {
-			li.children[i].style.display = "none";
 			}
+		};
+		var hideMe = function (e) {
+			if (this.children) {
+				for (var i = 0; i < this.firstElementChild.children.length; i++) {
+					this.firstElementChild.children[i].style.display = "none";
 				}
-			};
+			}
+		};
+//	var echoMe = function(arg) {
+//		var mouseOn = function(arg) {
+//			var mouse = false;
+//			var tmp = function(e) {
+//				mouse = true;
+//			};
+//			arg.addEventListener("mouseover", tmp);
+//			for (var i = 0; i < arg.children.length; i++) {
+//				arg.children[i].addEventListener("mouseover", tmp);
+//				}
+//			return mouse
+//		};
+//		if (!mouseOn(arg)){
+//			hideMe(arg);
+//			return clearInterval(mouseId);
+//		}
+//		console.log('interwał');
+//	};
+		showMe(this.firstElementChild);
+//		var tmp = function() {
+//			li.addEventListener("mouseout", hideMe)
+//		};
+//		window.setTimeout(tmp, 3000);
+//		var mouseId = setInterval(echoMe(this), 2000);
+			menu.addEventListener("mouseout", hideMe);
+	};
 
-	li.addEventListener("mouseover", showMe);
-	ul.addEventListener("mouseout", hideMenu);
+	menu.addEventListener("mouseover", showMenu);
 
 	//Krzesła-obrazki
 
@@ -31,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
 			this.querySelector("p").style.display = "block"
 		} else {
 			this.querySelector("p").style.display = "none"
-			}
-		};
+		}
+	};
 	var divImg = document.querySelectorAll('.main-img');
 	for (var i = 0; i < divImg.length; i++) {
 		divImg[i].addEventListener("mouseover", toggleMe);
