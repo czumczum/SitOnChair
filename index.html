@@ -13,7 +13,7 @@
 <! -- Header -->
 	<header>
 		<p>Sit <strong>on</strong> chair</p>
-		<ul>
+		<ul><div id="menu-helper">
 			<li class="menu">O firmie
 <!-- Wyskakujące menu -->
 				<div id="arrow-menu"></div>
@@ -22,6 +22,7 @@
 					<li>Nasz Team</li>
 					<li>Historia</li>
 				</ul></li>
+			</div>
 			<li>Galeria</li>
 			<li>Kontakt</li>
 		</ul>
@@ -29,10 +30,18 @@
 
 <!-- Biały element z krzesłem -->
 	<main>
-		<div id="image"></div>
+		<div class="image"></div>
+		<div class="image"></div>
+		<div class="image"></div>
 		<h1>sit <strong>on</strong> our <strong>chair</strong></h1>
 		<p>Jelly beans apple pie pie chupa chups cheesecake danish tart fruitcake. Gummies muffin biscuit icing ice cream cake chupa chups dragée chocolate. Carrot cake oat cake gummies sweet roll cotton candy bear claw. Cheesecake toffee ice cream. Jelly beans candy chocolate cake lollipop muffin gummi bears jelly.</p>
+		<p>Toffee dragée wafer toffee brownie oat cake. Bonbon pudding halvah. Gummies gummi bears jujubes jelly-o pie cake cake tootsie roll sweet roll. Croissant soufflé tart danish pastry tart fruitcake. Fruitcake croissant liquorice caramels chocolate jujubes icing sugar plum. Sweet roll pastry sweet jelly beans oat cake.</p>
+		<p>Pudding marzipan powder. Topping bear claw liquorice. Gummies donut jelly-o danish jelly liquorice soufflé pudding brownie. Tiramisu dessert pie cookie. Cookie cookie cupcake sesame snaps chocolate. Toffee sweet muffin. Chupa chups lollipop tiramisu gingerbread marshmallow jelly candy canes tootsie roll. Candy fruitcake soufflé.</p>
 		<a>Zobacz więcej</a>
+
+<!-- Przesuwki do slidera -->
+		<p class="slider" id="slider-left">&#10094;</p>
+		<p class="slider" id="slider-right">&#10095;</p>
 	</main>
 
 <!-- Biały - menu zdjęciowe -->
@@ -116,6 +125,37 @@
 		</div>
 	</nav>
 	
+<!-- Menu z wyborem -->
+	<section id="pricelist">
+		<h1>Skomponuj swoje krzesło</h1>
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn">Wybierz rodzaj</button>
+		  <div id="myDropdown" class="dropdown-content">
+			<a href="#">Chair Clair</a>
+			<a href="#">Chair Margarita</a>
+			<a href="#">Chair Selena</a>
+		  </div>
+		</div>
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn">Wybierz kolor</button>
+		  <div id="myDropdown" class="dropdown-content">
+			<a href="#">Chair Clair</a>
+			<a href="#">Chair Margarita</a>
+			<a href="#">Chair Selena</a>
+		  </div>
+		</div>
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="dropbtn">Wybierz rodzaj</button>
+		  <div id="myDropdown" class="dropdown-content">
+			<a href="#">Chair Clair</a>
+			<a href="#">Chair Margarita</a>
+			<a href="#">Chair Selena</a>
+		  </div>
+		</div>
+		<div id="price-img"></div>
+	</section>
+
+
 <!-- Formularz kontaktowy -->
 	<div id="contact">
 		<h1>Kontakt</h1>

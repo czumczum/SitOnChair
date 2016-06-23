@@ -93,14 +93,22 @@ main {
 
 }
 /*Zdjęcie krzesła*/
-#image {
-	display: inline-block;
+.image {
+	display: none;
 	position: relative;
 	width: 477px;
 	height: 350px;
 	top: 80px;
-	background-image: url("../img/black_chair.png");
 	background-size: cover;
+}
+.image:first-of-type {
+	background-image: url("../img/black_chair.png");
+}
+.image:nth-of-type(2) {
+	background-image: url("../img/red.png");
+}
+.image:nth-of-type(3) {
+	background-image: url("../img/orange.png");
 }
 main h1 {
     display: inline-block;
@@ -113,7 +121,7 @@ main h1 {
 	font-size: 30px;
 }
 main p {
-	display: inline-block;
+	display: none;
     width: 430px;
     height: 150px;
     overflow: hidden;
@@ -123,6 +131,15 @@ main p {
     left: 605px;
     top: -177px;
     font-size: 0.9em;
+}
+main p:first-of-type {
+}
+main p:nth-of-type(2) {
+}
+main p:nth-of-type(3) {
+}
+.visible {
+	display: inline-block;
 }
 main a {
     vertical-align: top;
@@ -136,8 +153,32 @@ main a {
     height: 50px;
     text-align: center;
     margin-left: 245px;
-    /* padding-left: 315px; */
     background-color: #24c9ae;
+	border: 2px double #24c9ae;
+}
+main a:hover {
+	border: 2px double rgb(36, 201, 174);
+	background-color: #f2f2f2;
+	color: #24c9ae;
+}
+
+/*Slider*/
+.slider {
+	color: #24c9ae;
+	position: relative;
+	display: inline-block;
+	font-size: 40px;
+	z-index: 4;
+}
+.slider:hover {
+	text-shadow: 0px 0px 8px rgba(36, 201, 174, 0.8);
+}
+#slider-left {
+	left: 70px;
+	top: -380px;
+}
+#slider-right {
+	top: -380px;
 }
 
 /*Biały - menu zdjęć*/
@@ -381,6 +422,106 @@ nav a {
     background-color: #f0f0f0;
 }
 
+/*Wybór ceny i modelu*/
+#pricelist {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width:1200px;
+	height:730px;
+	background-color: white;
+}
+#pricelist h1 {
+	color: #5e5e5e;
+    font-weight: 500;
+	display: block;
+    width: 320px;
+	font-size: 25px;
+    border-bottom: 6px solid #24c9ae;
+	text-transform: uppercase;
+	margin-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+#pricelist ul {
+	position: relative;
+    left: 50px;
+}
+#pricelist input {
+	font-family: 'Raleway', serif;
+    width: 600px;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 30px;
+	border: none;
+    box-shadow: 0 0 2px 0 #24c9ae;
+}
+#pricelist textarea {
+	font-family: 'Raleway', serif;
+    width: 600px;
+	height: 150px;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 30px;
+	resize: none;
+	color: #c0c0c0;
+	border: none;
+    box-shadow: 0 0 2px 0 #24c9ae;
+}
+#pricelist input[type="submit"] {
+	background-color: #24c9ae;
+    position: relative;
+	top: -78px;
+    left: 380px;
+    width: 400px;
+    font-size: 30px;
+    padding: 20px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+	border-radius: 10%;
+	margin-top: 0;
+}
+#pricelist input[type="checkbox"] {
+    display:none;
+}
+#pricelist input[type="checkbox"] + label span {
+    display: inline-block;
+    position: relative;
+    top: -150px;
+    left: 740px;
+    font-size: 16px;
+    width: 300px;
+    height: 50px;
+    color: #c0c0c0;
+}
+#pricelist input[type="checkbox"] + label span:first-child {
+    display: inline-block;
+    position: relative;
+    width: 44px;
+    height: 38px;
+	box-shadow: 0 0 1px 0 #c0c0c0;
+	padding-right: 10px;
+}
+#pricelist input[type="checkbox"]:checked + label span:first-child {
+    background: url("../img/form_ok.jpg") no-repeat;
+    display: inline-block;
+    position: relative;
+    width: 44px;
+    height: 38px;
+	vertical-align: baseline;
+}
+#price-img {
+	display: inline-block;
+	position: relative;
+	width: 250px;
+    height: 215px;
+    top: -450px;
+    left: 785px;
+	background-image: url("../img/orange.png");
+	background-size: cover;
+}
 
 /*Formularz kontakt*/
 #contact {

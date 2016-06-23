@@ -64,4 +64,32 @@ document.addEventListener("DOMContentLoaded", function () {
 		divImg[i].addEventListener("mouseout", toggleMe);
 	};
 
+	//Slider
+
+	var imgs = document.querySelectorAll('.image');
+	var text = document.querySelectorAll('main p');
+	var prev = document.querySelector('#slider-left');
+	var next = document.querySelector('#slider-right');
+	var index = 0;
+	imgs[index].classList.add('visible');
+	text[index].classList.add('visible');
+	var change = function (e) {
+		imgs[index].classList.remove('visible');
+		text[index].classList.remove('visible');
+		if (this == prev) {
+			index -= 1;
+		} else if (this == next) {
+			index += 1;
+		};
+	if (index == imgs.length) {
+	index = 0;
+	} else if (index < 0) {
+	index = imgs.length - 1;
+	}
+	imgs[index].classList.add('visible');
+	text[index].classList.add('visible');
+	};
+	prev.addEventListener("click", change);
+	next.addEventListener("click", change);
+
 });
