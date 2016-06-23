@@ -448,7 +448,9 @@ nav a {
 #pricelist ul {
 	position: relative;
     left: 50px;
+	top: -300px;
 	display: inline-block;
+	z-index: 1;
 }
 #pricelist input[type="submit"] {
 	background-color: #24c9ae;
@@ -456,7 +458,7 @@ nav a {
 	top: -78px;
     left: 380px;
     width: 400px;
-    font-size: 30px;
+    font-size: 20px;
     padding: 20px;
     color: white;
     font-weight: 700;
@@ -479,7 +481,7 @@ nav a {
 #check + span {
 	z-index: 3;
 	color: #c0c0c0;
-	font-size: 30px;
+	font-size: 20px;
 	display: inline-block;
     top: -10px;
     position: relative;
@@ -490,7 +492,7 @@ nav a {
 	color: #c0c0c0;
 	background-color: white;
     width: 400px;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px 10px;
     margin-top: 30px;
 	border: none;
@@ -553,19 +555,62 @@ nav a {
 .image_part {
 	display: inline-block;
     position: relative;
-    top: -100px;
-    left: 50px;
+    top: -350px;
+    left: 20px;
     width: 300px;
     height: 730px;
+	z-index: 0;
 }
 .summary_part {
 	display: inline-block;
     position: relative;
-    top: -363px;
+    top: -130px;
     width: 480px;
     height: 730px;
 }
-
+.summary_panel {
+	position: relative;
+    height: 500px;
+	width: 400px;
+    left: 52px;
+}
+h4 {
+	color: #24c9ae;
+	border-top: none;
+	padding-bottom: 10px;
+}
+#title {
+	border-bottom: 1px dotted #c0c0c0;
+}
+.panel_left {
+	float: left;
+    height: 280px;
+    width: 250px;
+    color: #c0c0c0;
+    box-shadow: 0 0 2px 0 #24c9ae;
+    margin-right: 3px;
+    padding: 27px;
+    font-size: 20px;
+}
+.panel_left span {
+	display: block;
+	margin-top: 20px;
+}
+.panel_right {
+	float: left;
+	margin-left: 10px;
+    height: 280px;
+    width: 100px;
+    color: #c0c0c0;
+    box-shadow: 0 0 2px 0 #24c9ae;
+    margin-right: 3px;
+    padding: 27px;
+    font-size: 20px;
+}
+.panel_right span {
+	display: block;
+	margin-top: 20px;
+}
 /*Formularz kontakt*/
 #contact {
 	margin-top: 0;
