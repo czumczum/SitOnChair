@@ -170,8 +170,9 @@ main a:hover {
 	font-size: 40px;
 	z-index: 4;
 }
-.slider:hover {
+.slider strong:hover {
 	text-shadow: 0px 0px 8px rgba(36, 201, 174, 0.8);
+	cursor: pointer;
 }
 #slider-left {
 	left: 70px;
@@ -447,27 +448,7 @@ nav a {
 #pricelist ul {
 	position: relative;
     left: 50px;
-}
-#pricelist input {
-	font-family: 'Raleway', serif;
-    width: 600px;
-    font-size: 30px;
-    padding: 10px 10px;
-    margin-top: 30px;
-	border: none;
-    box-shadow: 0 0 2px 0 #24c9ae;
-}
-#pricelist textarea {
-	font-family: 'Raleway', serif;
-    width: 600px;
-	height: 150px;
-    font-size: 30px;
-    padding: 10px 10px;
-    margin-top: 30px;
-	resize: none;
-	color: #c0c0c0;
-	border: none;
-    box-shadow: 0 0 2px 0 #24c9ae;
+	display: inline-block;
 }
 #pricelist input[type="submit"] {
 	background-color: #24c9ae;
@@ -486,31 +467,77 @@ nav a {
 #pricelist input[type="checkbox"] {
     display:none;
 }
-#pricelist input[type="checkbox"] + label span {
+#check {
     display: inline-block;
     position: relative;
-    top: -150px;
-    left: 740px;
-    font-size: 16px;
-    width: 300px;
+    width: 50px;
     height: 50px;
-    color: #c0c0c0;
-}
-#pricelist input[type="checkbox"] + label span:first-child {
-    display: inline-block;
+	z-index: 3;
+    margin-top: 20px;
+	box-shadow: 0 0 2px 0 #24c9ae;
+    }
+#check + span {
+	z-index: 3;
+	color: #c0c0c0;
+	font-size: 30px;
+	display: inline-block;
+    top: -10px;
     position: relative;
-    width: 44px;
-    height: 38px;
-	box-shadow: 0 0 1px 0 #c0c0c0;
-	padding-right: 10px;
 }
+/* Dropdown Button */
+.dropbtn {
+    font-family: 'Raleway', serif;
+	color: #c0c0c0;
+	background-color: white;
+    width: 400px;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin-top: 30px;
+	border: none;
+    box-shadow: 0 0 2px 0 #24c9ae;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #f2f2f2;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+	font-family: 'Raleway', serif;
+    position: absolute;
+    background-color: white;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 4;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #323232;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {
+	display:block;
+}
+
+
 #pricelist input[type="checkbox"]:checked + label span:first-child {
     background: url("../img/form_ok.jpg") no-repeat;
-    display: inline-block;
-    position: relative;
-    width: 44px;
-    height: 38px;
-	vertical-align: baseline;
+	background-position: center center;
 }
 #price-img {
 	display: inline-block;
@@ -521,6 +548,22 @@ nav a {
     left: 785px;
 	background-image: url("../img/orange.png");
 	background-size: cover;
+}
+/*Kolejna część formularza*/
+.image_part {
+	display: inline-block;
+    position: relative;
+    top: -100px;
+    left: 50px;
+    width: 300px;
+    height: 730px;
+}
+.summary_part {
+	display: inline-block;
+    position: relative;
+    top: -363px;
+    width: 480px;
+    height: 730px;
 }
 
 /*Formularz kontakt*/

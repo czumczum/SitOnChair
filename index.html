@@ -40,8 +40,8 @@
 		<a>Zobacz więcej</a>
 
 <!-- Przesuwki do slidera -->
-		<p class="slider" id="slider-left">&#10094;</p>
-		<p class="slider" id="slider-right">&#10095;</p>
+		<p class="slider" id="slider-left"><strong>&#10094;</strong></p>
+		<p class="slider" id="slider-right"><strong>&#10095;</strong></p>
 	</main>
 
 <!-- Biały - menu zdjęciowe -->
@@ -128,32 +128,72 @@
 <!-- Menu z wyborem -->
 	<section id="pricelist">
 		<h1>Skomponuj swoje krzesło</h1>
-		<div class="dropdown">
-		  <button onclick="myFunction()" class="dropbtn">Wybierz rodzaj</button>
-		  <div id="myDropdown" class="dropdown-content">
-			<a href="#">Chair Clair</a>
-			<a href="#">Chair Margarita</a>
-			<a href="#">Chair Selena</a>
-		  </div>
-		</div>
-		<div class="dropdown">
-		  <button onclick="myFunction()" class="dropbtn">Wybierz kolor</button>
-		  <div id="myDropdown" class="dropdown-content">
-			<a href="#">Chair Clair</a>
-			<a href="#">Chair Margarita</a>
-			<a href="#">Chair Selena</a>
-		  </div>
-		</div>
-		<div class="dropdown">
-		  <button onclick="myFunction()" class="dropbtn">Wybierz rodzaj</button>
-		  <div id="myDropdown" class="dropdown-content">
-			<a href="#">Chair Clair</a>
-			<a href="#">Chair Margarita</a>
-			<a href="#">Chair Selena</a>
-		  </div>
-		</div>
-		<div id="price-img"></div>
-	</section>
+		<ul>
+			<li>
+				<div class="dropdown">
+				  <button class="dropbtn">Wybierz rodzaj</button>
+				  <div id="myDropdown" class="dropdown-content">
+					<a href="#">Chair Clair</a>
+					<a href="#">Chair Margarita</a>
+					<a href="#">Chair Selena</a>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div class="dropdown">
+				  <button class="dropbtn">Wybierz kolor</button>
+				  <div class="dropdown-content">
+					<a href="#">pomarańczowy</a>
+					<a href="#">czarny</a>
+					<a href="#">czerwony</a>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div class="dropdown">
+				  <button class="dropbtn">Wybierz materiał</button>
+				  <div id="myDropdown" class="dropdown-content">
+					<a href="#">tkanina</a>
+					<a href="#">skóra</a>
+				  </div>
+				</div>
+			</li>
+			<li>
+				<div>
+					<input type="checkbox" name="question" id="question"/>
+					<label for="question">
+					<span id="check"></span>
+					<span>Transport</span>
+					</label>
+				</div>
+			</li>
+		</ul>
+		<section class="image_part">
+            <img src="img/orange.png">
+        </section>
+        <section class="summary_part">
+                <h1>Podsumowanie</h1>
+                <span class="green_bell"></span>
+
+            <div class="summary_panel">
+                <div class="panel_left">
+                    <h4 class="title">Twój fotel</h4>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h4 class="title value"></h4>
+                    <span class="color value"></span>
+                    <span class="pattern value"></span>
+                    <span class="transport value"></span>
+                </div>
+                <div class="sum_label">SUMA</div>
+                <div class="sum"><strong></strong></div>
+            </div>
+            <a href="" class="green_button">Zamawiam</a>
+        </section>
+</section>
 
 
 <!-- Formularz kontaktowy -->

@@ -92,4 +92,26 @@ document.addEventListener("DOMContentLoaded", function () {
 	prev.addEventListener("click", change);
 	next.addEventListener("click", change);
 
+	//Dropdown
+	var dropBtn = document.querySelectorAll('.dropbtn');
+	var dropDiv = document.getElementById("pricelist");
+	var showMe = function(e) {
+		if (!this.nextElementSibling.classList.contains("show")) {
+			this.nextElementSibling.classList.add("show");
+
+		} else {
+			this.nextElementSibling.classList.remove("show");
+		}
+	};
+	var hideMe = function(e) {
+		for (var i = 0; i < dropBtn.length; i++) {
+			dropBtn[i].classList.remove("show");
+		}
+	};
+
+	for (var i = 0; i < dropBtn.length; i++) {
+		dropBtn[i].addEventListener("click", showMe);
+	};
+	dropDiv.addEventListener("mouseenter", hideMe);
+
 });
