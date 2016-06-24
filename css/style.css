@@ -429,7 +429,7 @@ nav a {
 	margin-left: auto;
 	margin-right: auto;
 	width:1200px;
-	height:730px;
+	height:530px;
 	background-color: white;
 }
 #pricelist h1 {
@@ -448,7 +448,7 @@ nav a {
 #pricelist ul {
 	position: relative;
     left: 50px;
-	top: -300px;
+	top: -383px;
 	display: inline-block;
 	z-index: 1;
 }
@@ -491,7 +491,7 @@ nav a {
     font-family: 'Raleway', serif;
 	color: #c0c0c0;
 	background-color: white;
-    width: 400px;
+    width: 300px;
     font-size: 20px;
     padding: 10px 10px;
     margin-top: 30px;
@@ -517,7 +517,7 @@ nav a {
 	font-family: 'Raleway', serif;
     position: absolute;
     background-color: white;
-    min-width: 400px;
+    min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 4;
 }
@@ -535,9 +535,7 @@ nav a {
 .show {
 	display:block;
 }
-
-
-#pricelist input[type="checkbox"]:checked + label span:first-child {
+input[type="checkbox"]#transport:checked + label span:first-child {
     background: url("../img/form_ok.jpg") no-repeat;
 	background-position: center center;
 }
@@ -556,9 +554,9 @@ nav a {
 	display: inline-block;
     position: relative;
     top: -350px;
-    left: 20px;
+    left: 80px;
     width: 300px;
-    height: 730px;
+    height: 250px;
 	z-index: 0;
 }
 .summary_part {
@@ -566,7 +564,8 @@ nav a {
     position: relative;
     top: -130px;
     width: 480px;
-    height: 730px;
+    height: 400px;
+	left: 100px;
 }
 .summary_panel {
 	position: relative;
@@ -584,7 +583,7 @@ h4 {
 }
 .panel_left {
 	float: left;
-    height: 280px;
+    height: 220px;
     width: 250px;
     color: #c0c0c0;
     box-shadow: 0 0 2px 0 #24c9ae;
@@ -599,7 +598,7 @@ h4 {
 .panel_right {
 	float: left;
 	margin-left: 10px;
-    height: 280px;
+    height: 220px;
     width: 100px;
     color: #c0c0c0;
     box-shadow: 0 0 2px 0 #24c9ae;
@@ -611,13 +610,59 @@ h4 {
 	display: block;
 	margin-top: 20px;
 }
+.sum_label {
+	position: relative;
+	display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 0 2px 0 #24c9ae;
+	font-size: 20px;
+    padding: 10px;
+    height: 50px;
+    width: 364px;
+	color: #24c9ae;
+	text-transform: uppercase;
+}
+.sum {
+	position: relative;
+    display: inline-block;
+    top: -37px;
+    float: right;
+    right: 70px;
+    font-size: 20px;
+	color: #24c9ae;
+	font-size: 16px;
+}
+.sum strong {
+	font-size: 20px;
+}
+.green_button {
+    top: -200px;
+    color: white;
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 12px;
+    border-radius: 10%;
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    left: 100px;
+    background-color: #24c9ae;
+    border: 2px double #24c9ae;
+	text-decoration: none;
+}
+.green_button:hover {
+	color: #24c9ae;
+	background-color: #fefefe;
+}
 /*Formularz kontakt*/
 #contact {
-	margin-top: 0;
+	margin-top: 5px;
 	margin-left: auto;
 	margin-right: auto;
 	width:1200px;
-	height:730px;
+	height:550px;
 	background-color: white;
 }
 #contact h1 {
@@ -640,7 +685,7 @@ h4 {
 #contact input {
 	font-family: 'Raleway', serif;
     width: 600px;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px 10px;
     margin-top: 30px;
 	border: none;
@@ -650,7 +695,7 @@ h4 {
 	font-family: 'Raleway', serif;
     width: 600px;
 	height: 150px;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px 10px;
     margin-top: 30px;
 	resize: none;
@@ -663,15 +708,8 @@ h4 {
     position: relative;
 	top: -78px;
     left: 380px;
-    width: 400px;
-    font-size: 30px;
-    padding: 20px;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-	border-radius: 10%;
-	margin-top: 0;
-}
+	width: 250px;
+    }
 #contact input[type="checkbox"] {
     display:none;
 }
@@ -685,15 +723,13 @@ h4 {
     height: 50px;
     color: #c0c0c0;
 }
-#contact input[type="checkbox"] + label span:first-child {
-    display: inline-block;
-    position: relative;
+input[type="checkbox"]#question + label span:first-child {
     width: 44px;
     height: 38px;
 	box-shadow: 0 0 1px 0 #c0c0c0;
 	padding-right: 10px;
 }
-#contact input[type="checkbox"]:checked + label span:first-child {
+input[type="checkbox"]#question:checked + label span:first-child {
     background: url("../img/form_ok.jpg") no-repeat;
     display: inline-block;
     position: relative;

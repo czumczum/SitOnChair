@@ -103,15 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			this.nextElementSibling.classList.remove("show");
 		}
 	};
-	var hideMe = function(e) {
-		for (var i = 0; i < dropBtn.length; i++) {
-			dropBtn[i].classList.remove("show");
-		}
-	};
 
 	for (var i = 0; i < dropBtn.length; i++) {
 		dropBtn[i].addEventListener("click", showMe);
 	};
-	dropDiv.addEventListener("mouseenter", hideMe);
 
 });
